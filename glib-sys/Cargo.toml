@@ -6,7 +6,7 @@ build = "build.rs"
 links = "glib"
 
 description = "FFI bindings to GLib"
-repository = "https://github.com/rust-gnome/glib"
+repository = "https://github.com/tOkeshu/glib"
 license = "MIT"
 
 [lib]
