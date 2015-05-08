@@ -269,7 +269,7 @@ pub struct TimeVal {
 }
 
 impl TimeVal {
-    pub fn add(&mut self, microseconds: u64) {
+    pub fn add(&mut self, microseconds: u32) {
         unsafe { ffi::g_time_val_add(std::mem::transmute(self), microseconds) }
     }
 
@@ -292,7 +292,7 @@ pub fn get_current_time() -> TimeVal {
     t
 }
 
-pub fn usleep(microseconds: u64) {
+pub fn usleep(microseconds: u32) {
     unsafe { ffi::g_usleep(microseconds) }
 }
 
